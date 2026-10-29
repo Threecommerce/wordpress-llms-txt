@@ -2,6 +2,8 @@
 
 A WordPress plugin that publishes **`/llms.txt`** and **`/llms-full.txt`**, the files designed for language models (ChatGPT, Claude, Perplexity, Gemini...) following the [llmstxt.org](https://llmstxt.org) specification, and lets you allow or block AI crawlers in `robots.txt` from the admin. Unlike the built-in feature of other SEO plugins, the files are generated on the fly and **per language**, with no duplicate URLs between translations.
 
+![The generated /llms.txt file with title, summary, pages, articles and optional links](images/llms-txt-output.png)
+
 **Compatibility:** WordPress 6.0+ · PHP 8.1 – 8.4 · Works with WPML and Polylang
 **License:** free · **Current version:** see [Releases](../../releases)
 
@@ -15,6 +17,8 @@ A WordPress plugin that publishes **`/llms.txt`** and **`/llms-full.txt`**, the 
 - **AI crawlers**: for each major bot (GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, Claude-User, PerplexityBot, Perplexity-User, Google-Extended, Applebot-Extended, meta-externalagent, CCBot) choose *Not specified*, *Allow* or *Block*; the plugin adds the `User-agent` groups to the WordPress `robots.txt`.
 - **Cache**: files are cached by type and language and rebuilt when content, a category or the settings change. Response is `text/plain; charset=utf-8` with `X-Robots-Tag: noindex`, no BOM.
 - Developer hooks: `wp_llmstxt_query_args`, `wp_llmstxt_post_html`, `wp_llmstxt_full_max_bytes`.
+
+![Plugin settings page: content types, exclusions, title, summary, introduction and extra links](images/llms-txt-settings.png)
 
 ## Requirements
 
