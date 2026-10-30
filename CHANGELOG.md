@@ -5,6 +5,10 @@ Tutte le modifiche rilevanti a questo plugin sono documentate in questo file.
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/it/1.1.0/)
 e questo progetto aderisce al [Semantic Versioning](https://semver.org/lang/it/).
 
+## 1.1.1
+
+- Sicurezza: con utente loggato `llms.txt` / `llms-full.txt` non vengono messi in cache (contenuti riservati potevano finire nella cache pubblica).
+
 ## [1.1.0] - 2026-10-22
 
 ### Added
