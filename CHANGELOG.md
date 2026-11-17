@@ -5,6 +5,11 @@ Tutte le modifiche rilevanti a questo plugin sono documentate in questo file.
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/it/1.1.0/)
 e questo progetto aderisce al [Semantic Versioning](https://semver.org/lang/it/).
 
+## [1.1.2] - 2026-11-17
+
+- Traduzione inglese (en_US) della pagina di impostazioni, delle intestazioni di llms.txt e della descrizione del plugin: con WordPress in inglese tutto è in inglese.
+- Segnaposto del campo *Link aggiuntivi* traducibile; aggiunto `Domain Path` nell'intestazione del plugin.
+
 ## 1.1.1
 
 - Sicurezza: con utente loggato `llms.txt` / `llms-full.txt` non vengono messi in cache (contenuti riservati potevano finire nella cache pubblica).
