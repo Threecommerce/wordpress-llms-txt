@@ -15,7 +15,8 @@ A WordPress plugin that publishes **`/llms.txt`** and **`/llms-full.txt`**, the 
 - **Descriptions**: manual excerpt, otherwise the Yoast SEO meta description, otherwise the first 30 words.
 - **Exclusions**: pages and posts with `noindex` (Yoast SEO) and password-protected ones are always excluded; extra IDs can be excluded from the panel.
 - **AI crawlers**: for each major bot (GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, Claude-User, PerplexityBot, Perplexity-User, Google-Extended, Applebot-Extended, meta-externalagent, CCBot) choose *Not specified*, *Allow* or *Block*; the plugin adds the `User-agent` groups to the WordPress `robots.txt`.
-- **Cache**: files are cached by type and language and rebuilt when content, a category or the settings change. Response is `text/plain; charset=utf-8` with `X-Robots-Tag: noindex`, no BOM.
+- **Cache**: files are cached by type and language and rebuilt when content, a category or the settings change; they are never cached for logged-in users. Response is `text/plain; charset=utf-8` with `X-Robots-Tag: noindex`, no BOM.
+- **Italian and English**: with WordPress in English the settings page, the `llms.txt` headings and the plugin description are in English.
 - Developer hooks: `wp_llmstxt_query_args`, `wp_llmstxt_post_html`, `wp_llmstxt_full_max_bytes`.
 
 ![Plugin settings page: content types, exclusions, title, summary, introduction and extra links](images/llms-txt-settings.png)
