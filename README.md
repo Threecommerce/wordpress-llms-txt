@@ -4,7 +4,7 @@ A WordPress plugin that publishes **`/llms.txt`** and **`/llms-full.txt`**, the 
 
 ![The generated /llms.txt file with title, summary, pages, articles and optional links](images/llms-txt-output.png)
 
-**Compatibility:** WordPress 6.0+ · PHP 8.1 – 8.4 · Works with WPML and Polylang
+**Compatibility:** WordPress 6.0+ · PHP 8.1 – 8.5 · Works with WPML and Polylang
 **License:** free · **Current version:** see [Releases](../../releases)
 
 ## Features
@@ -24,7 +24,7 @@ A WordPress plugin that publishes **`/llms.txt`** and **`/llms-full.txt`**, the 
 ## Requirements
 
 - WordPress 6.0 or newer
-- PHP 8.1 – 8.4
+- PHP 8.1 – 8.5
 - PHP extensions `dom` and `mbstring`
 - Pretty permalinks enabled (no need to regenerate them)
 
